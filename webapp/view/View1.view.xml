@@ -1,0 +1,18 @@
+<mvc:View controllerName="GRBpostPack.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page showHeader="false" binding="{GETPLANT>/S_T001WSet('03')}" class="sapUiSizeCompact">
+				<content>
+					<HBox alignContent="Center">
+						<core:Icon src="sap-icon://home" size="2em" class="sapUiTinyMarginTop sapUiTinyMarginBegin"/>
+						<Label text="{GETPLANT>EPlant} {GETPLANT&gt;ET001w/Name1}" class="sapUiSmallMarginTop sapUiTinyMarginBegin"/>
+					</HBox>
+					<HBox>
+						<SearchField search="scanHU" placeholder="{i18n>EnterTRNR}" width="120%"/>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
